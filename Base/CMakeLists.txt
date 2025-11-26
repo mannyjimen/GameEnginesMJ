@@ -19,7 +19,7 @@ PUBLIC
 )
 
 if(MSVC)
-	add_compile_definitions(Base PUBLIC BASE_MSVC)
+	target_compile_definitions(Base PUBLIC BASE_MSVC)
 endif()
 
 target_precompile_headers(Base PRIVATE src/pch.h)
